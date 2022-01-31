@@ -1,0 +1,25 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Programowanie obiektowe - podstawowe pojęcia, zastosowania.}
+
+\textbf{Programowanie obiektowe} (OOP) to jeden z paradygmatów programowania, który opiera się o definiowanie programów przy pomocy obiektów - elementów łączących stan (dane, atrybuty) oraz zachowanie (procedury, metody). Podejście to różni się od programowania proceduralnego, gdzie dane oraz procedury nie są ściśle powiązane. W zamyśle programowanie obiektówe ma ułatwić pisanie, konserwację oraz wielokrotne uzycie programów lub ich fragmentów.
+
+Największym atutem takiego podejścia do pisania programów komputerowych jest to, że ułatwia ono programowanie, analizę oraz modelowanie zgodnie z rzeczywistością, czyli tym jak ludzie odbierają świat. Przejawia się to tym, że obecnie programowanie obiektowe jest dominującym podejściem do wytwarzania oprogramowania.
+
+W większości języków obiektowych występuje pojęcie klasy oraz obiektu.
+\begin{itemize}
+    \item \textbf{klasy} - definicje formatu danych oraz dostępnych procedur dla danego typu lub klasy obiektu, mogą same także zawierać dane oraz procedury (znane jako metody klas), na przykład, klasy zawierają dane oraz metody.
+    \item \textbf{obiekty} - instancje konkretnych klas.
+\end{itemize}
+
+Niektóre języki nie umożliwiają tworzenia klas obiektów, wykorzystywane jest natomiast pojęcie prototypu. Przykładem języku który umożliwia korzystanie z paradygmatu obiektowego przy wykorzystaniu prototypów jest JavaScript.
+
+Podstawowe założenia paradygmatu obiektowego:
+\begin{itemize}
+    \item \textbf{Abstrakcja} - Każdy obiekt w systemie służy jako model abstrakcyjnego „wykonawcy”, który może wykonywać pracę, opisywać i zmieniać swój stan oraz komunikować się z innymi obiektami w systemie bez ujawniania, w jaki sposób zaimplementowano dane cechy.
+    \item \textbf{Hermetyzacja} - Czyli ukrywanie implementacji, enkapsulacja. Zapewnia, że obiekt nie może zmieniać stanu wewnętrznego innych obiektów w nieoczekiwany sposób. Tylko własne metody obiektu są uprawnione do zmiany jego stanu. Każdy typ obiektu prezentuje innym obiektom swój interfejs, który określa dopuszczalne metody współpracy.
+    \item \textbf{Polimorfizm} - Referencje i kolekcje obiektów mogą dotyczyć obiektów różnego typu, a wywołanie metody dla referencji spowoduje zachowanie odpowiednie dla pełnego typu obiektu wywoływanego. Jeśli dzieje się to w czasie działania programu, to nazywa się to późnym wiązaniem lub wiązaniem dynamicznym.
+    \item \textbf{Dziedziczenie} - Porządkuje i wspomaga polimorfizm i enkapsulację dzięki umożliwieniu definiowania i tworzenia specjalizowanych obiektów na podstawie bardziej ogólnych. Dla obiektów specjalizowanych nie trzeba redefiniować całej funkcjonalności, lecz tylko tę, której nie ma obiekt ogólniejszy. W typowym przypadku powstają grupy obiektów zwane klasami, oraz grupy klas zwane drzewami. Odzwierciedlają one wspólne cechy obiektów. 
+\end{itemize}
+
+\end{document}
