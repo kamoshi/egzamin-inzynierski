@@ -1,0 +1,24 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Deterministyczne automaty skończone - definicja, zastosowania.}
+
+\textbf{Deterministyczny automat skończony} to abstrakcyjna maszyna o skończonej liczbie stanów, która
+zaczynając w stanie początkowym czyta kolejne symbole pewnego słowa, po przeczytaniu każdego
+zmieniając swój stan na stan będący wartością funkcji jednego przeczytanego symbolu oraz stanu
+aktualnego. Jeśli po przeczytaniu całego słowa maszyna znajduje się w którymś ze stanów oznaczonych
+jako końcowe, słowo należy do języka regularnego, do rozpoznawania którego jest zbudowana.
+
+Deterministyczny automat skończony, podobnie jak inne automaty skończone może być reprezentowany za pomocą tabeli przejść pomiędzy stanami lub diagramu stanów. 
+
+Deterministyczny automat skończony może być opisany przez $(A,Q,q_{0},F,d)$, gdzie:
+\begin{itemize}
+    \item $A$ jest skończonym alfabetem wejściowym
+    \item $Q$ jest skończonym zbiorem stanów
+    \item $q_{0}$ jest stanem początkowym, przy czym $q_{0} \in Q$
+    \item $F$ jest zbiorem stanów akceptujących (końcowych), będącym podzbiorem $Q$.
+    \item $d$ jest funkcją przejścia, przypisująca parze $(q,a)$ nowy stan $p$, w którym znajdzie się automat po przeczytaniu symbolu $a$ w stanie $q$.
+\end{itemize}
+
+\textbf{Słowa} mogą być dowolnymi symbolami, znakami należącymi do obranego alfabetu. Najprościej jest operować na słowach alfabetu binarnego.
+
+\end{document}
