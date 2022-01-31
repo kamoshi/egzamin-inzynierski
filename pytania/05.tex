@@ -1,0 +1,61 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Podstawowe operacje na zbiorach, funkcjach i relacjach. Rachunek zdań. Rachunek kwantyfikatorów.}
+
+\textbf{Zbiór} - kolekcja niepowtarzających się elementów bez wyznaczonej kolejności. Sposoby określenia zbioru to: wyliczenie, podanie wzoru, podanie własności (liczby rzeczywiste, parzyste, etc.).
+
+Operacje na zbiorach:
+\begin{itemize}
+    \item \textbf{suma} $A \cup B$
+    \item \textbf{iloczyn} $A \cap B$
+    \item \textbf{różnica} $A \setminus B$
+    \item \textbf{różnica symetryczna} $A \Delta B$
+    \item \textbf{dopełnienie} $X'$
+\end{itemize}
+
+\textbf{Iloczyn kartezjański} - zbiór wszystkich par uporządkowanych $(a, b)$ takich, że $a$ należy do zbioru $A$, natomiast $b$ należy do zbioru $B$. Iloczyn kartezjański oznacza się symbolem $A \times B$.
+
+\textbf{Relacja} to pewien podzbiór iloczynu kartezjańskiego skończonej liczby zbiorów. Relacja jest zbiorem więc można na niej stosować operacje na zbiorach: suma, przecięcie (część wspólna), dopełnienie.
+
+Własności relacji:
+\begin{itemize}
+    \item \textbf{zwrotność} - relacja $\rho$ jest zwrotna, wtw., gdy dla każdego $x \in X$ zachodzi $x$ $\rho$ $x$. Innymi słowy, zwrotność relacji oznacza, że każdy element jest w relacji ze sobą.
+    \item \textbf{przeciwzwrotność} - nie istnieje taki element $x \in X$, że $x$ $\rho$ $x$.
+    \item \textbf{symetria} - relacja $\rho$ jest symetryczna, wtw., gdy dla dowolnych $x, y \in X$ jeśli $x$ $\rho$ $y$ to $y$ $\rho$ $x$. Intuicyjnie, symetria relacji oznacza, że możemy zmienić x z y w parze $(x,y)$ o ile w ogóle $(x,y) \in \rho$. Tak więc kolejność występowania elementów w relacji nie ma znaczenia.
+    \item \textbf{przeciwsymetria} - jeśli $x$ $\rho$ $y$, to nie $y$ $\rho$ $x$.
+    \item \textbf{antysymetria} - relacja $\rho$ jest antysyemtryczna, wtw., gdy dla dowolnych $x,y \in X$ jeśli $x \rho y$ oraz $y \rho x$, to $x = y$. Tak więc antysymetria relacji oznacza, że kolejność występowania różnych elementów w relacji jest istotna. To znaczy, że dla $x \neq y$ albo $x$ $\rho$ $y$, albo $y$ $\rho$ $x$, albo nie zachodzi ani jedno, ani drugie.
+    \item \textbf{przechodniość} - relacja $\rho$ jest przechodnia, wtw., gdy dla dowolnych $x,y,z \in X$ jeśli $x$ $\rho$ $y$ oraz $y$ $\rho$ $z$, to również $x$ $\rho$ $z$.
+    \item \textbf{spójność} - każde dwa różne elementy są ze sobą w relacji.
+\end{itemize}
+
+Relacja binarna jest relacją równoważności, gdy jest zwrotna, symetryczna i prze-
+chodnia.
+
+\textbf{Funkcja} to taka relacja binarna, że:
+\begin{itemize}
+    \item dla każdego $x \in X$ istnieje taki $y \in Y$, że $(x,y) \in f$.
+    \item dla dowolnych $x \in X, y_1,y_2 \in Y$ jeśli $(x,y_1) \in f$ oraz $(x,y_2) \in f$, to musi być $y_1 = y_2$.
+\end{itemize}
+Operacje na funkcjach:
+\begin{itemize}
+    \item \textbf{suma} 
+    \item \textbf{przecięcie} $f(x) = g(x)$
+    \item \textbf{złożenie} $g(f(x))$
+    \item \textbf{odwrotność} $f(x) = y \rightarrow f_{-1}(y) = x$
+\end{itemize}
+
+\textbf{Rachunek zdań} jest sztucznym, bardzo uproszcznym językiem. Składa się z alfabetu - zbioru symboli i
+stałych oraz formuł czyli poprawnych słów w sensie logiki (niekoniecznie prawdziwych). W klasycznym
+rachunku zdań przyjmuje się założenie, że każdemu zdaniu można przypisać jedną z dwu wartości
+logicznych - prawdę lub fałsz. Rachunek zdań składa się ze zbioru aksjomatów, najpopularniejszymi z
+nich są prawa De Morgana (Koniunkcja AND, alternatywa OR, negacja NOT):
+
+Alfabet rachunku zdań składa się z trzech podstawowych rodzajów znaków: zmiennych zdaniowych (a, b, c...), spójników logicznych ($\cup, \cap, \Rightarrow$...) oraz znaków pomocniczych (nawiasów).
+
+W \textbf{rachunku kwantyfikatorów} przy pomocy symboli oznaczających funkcje zdaniowe, symbolu równości $=$, kwantyfikatorów, spójników logicznych, zmiennych i nawiasów tworzymy wyrażenia oznaczające nowe funkcje zdaniowe lub zdania (w zależności od tego, czy wszystkie zmienne w tych wyrażeniach są związane, czy nie). Wyrażenia takie nazywamy formułami rachunku kwantyfikatorów, lub krótko formułami. Przykładowo rozważmy formułę
+
+\begin{displaymath}(*)\ \ \forall x(\varphi(x,y)\Rightarrow\exists y(\psi(x,y)\land\neg\varphi(x,y))).\end{displaymath}
+
+W formule tej symbole $\forall$ i $\exists$ odczytujemy jako ``dla każdego'' i ``istnieje''. Symbole $\varphi(x,y)$ i $\psi(x,y)$ mogą być tu interpretowane jako konkretne funkcje zdaniowe na wiele sposobów. Wyjątek czynimy dla symbolu równości $=$, który zawsze interpretujemy jak prawdziwą równość. Gdy $\varphi,\psi$ oznaczają konkretne funkcje zdaniowe, gdzie wspólnym zakresem zmiennych $x,y$ jest jakaś przestrzeń $X$, formuła $(*)$ również oznacza funkcję zdaniową zmiennej $y$ o zakresie $X$. Jeśli na przykład poprzedzimy ją kwantyfikatorem $\exists y$ (wiążącym zmienną $y$), stanie się ona zdaniem. Dlatego formuły, w których wszystkie zmienne są związane przez kwantyfikatory, nazywamy formułami domkniętymi lub (niezbyt poprawnie) zdaniami. 
+
+\end{document}
