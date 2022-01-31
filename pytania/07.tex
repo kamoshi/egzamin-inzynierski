@@ -1,0 +1,60 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Przykładowe architektury komputerów: von Neumana, Princeton, Harvard.}
+
+Architektura komputerowa definiuje to, w jaki sposób procesor jest połączony z pamięcią komputerową (RAM/ROM), celem wykonywania konkretnych programów komputerowych. Wyróżnić można dwie podstawowe architektury komputerowe: von Neumanna oraz Harvardzka.
+
+\subsection{Architektura von Neumanna}
+Charakteryzuje się tym, że:
+\begin{itemize}
+    \item komputer składa się z trzech części:
+    \begin{itemize}
+        \item Procesora - z częścią sterującą oraz arytmetyczno-logiczną
+        \item Pamięci - przechowującej wszystkie dane oraz instrukcje wymagane do wykonania programu komputerowego
+        \item Urządzenia wejścia / wyjścia
+    \end{itemize}
+    \item dane przechowywane są w tej samej formie, tak samo zakodowane - stąd zagrożenie wykonaniem danych jako instrukcji, lub też potraktowanie instrukcji jako danej.
+    \item Pojedyncza szyna danych pomiędzy pamięcią a procesorem
+\end{itemize}
+
+\textbf{Zalety}
+\begin{itemize}
+    \item CU pozyskuje instrukcje i dane z jednej pamięci (bo można alokować dla instrukcji/danych wedle potrzeby)
+    \item Organizacja pamięci według wizji programisty
+\end{itemize}
+
+\textbf{Wady}
+\begin{itemize}
+    \item Szeregowe przetwarzanie instrukcji
+    \item Pojedyncza szyna
+    \item Instrukcje dzieląc pamięć z danymi mogą zostać nadpisane
+    \item Duży przesył danych pomiędzy pamięcią a CPU (brak cache)
+\end{itemize}
+
+\subsection{Architektura Harvardzka}
+Charakteryzuje się tym, że:
+\begin{itemize}
+    \item komputer składa się z trzech części:
+    \begin{itemize}
+        \item Procesora - z częścią sterującą oraz arytmetyczno-logiczną
+        \item Pamięci na dane
+        \item Pamięci na intrukcje
+        \item Urządzenia wejścia / wyjścia
+    \end{itemize}
+    \item instrukcje oraz dane przechowywane są w osobnych jednostkach pamięci komputerowej.
+    \item każda pamięć jest obsługiwana osobno przez procesor więc możliwe jest jednoczesne pobieranie danych oraz instrukcji.
+\end{itemize}
+
+\textbf{Zalety}
+\begin{itemize}
+    \item Rozłączność intrukcji i danych = równoległy dostęp
+    \item Różny rozmiar komórek pamięci
+\end{itemize}
+
+\textbf{Wady}
+\begin{itemize}
+    \item Wolna pamięć nie może być alokowana dla innego typu pamięci
+    \item Droższa, potrzebne dwie szyny
+\end{itemize}
+
+\end{document}
