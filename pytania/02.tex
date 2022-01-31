@@ -1,7 +1,21 @@
 \documentclass[../main.tex]{subfiles}
 \begin{document}
-\textbf{Hello world!}
+\section{Arytmetyka dwójkowa, funkcje boolowskie, tablice Karnaugh.}
 
-Hello, here is some text without a meaning...
+\textbf{Arytmetyka dwójkowa}, także znana jako arytmetyka binarna, to arytmetyka opierająca się na dwójkowym systemie liczbowym. Znaczna większość systemów komputerowych do obliczeń wykorzystuje system dwójkowy (wyjątkiem są nieliczne komputery zaprojektowane zgodnie z logiką trójwartościową).
+
+Zgodnie z tą arytmetyką wszystkie liczby przedstawiane są w postaci binarnej, czyli za pomocą zer oraz jedynek. A zatem wykorzystywany jest binarny system liczbowy, przy czym podstawą systemu binarnego jest liczba dwa (stąd nazwa system binarny).
+
+
+\textbf{Funkcja boolowska} (inaczej funkcja logiczna) to dowolne odwzorowanie $f: X \rightarrow Y$, gdzie $B = \{0, 1\}$, $X$ jest podzbiorem $B^{n}$, zaś $Y$ jest podzbiorem $B^{m}$. Funkcja boolowska jest matematycznym modelem cyfrowego układu kombinacyjnego. Układy tego typu są wykorzystywane do konstrukcji między innymi multiplekserów, mikroprocesorów, do sterowania na przykład wyświetlaczami LED i w wielu innych urządzeniach elektronicznych.
+
+Istnieje kilka odmiennych form zapisu funkcji boolowskich:
+\begin{itemize}
+    \item \textbf{Opis słowny} - może być stosowany w przypadku bardzo prostych funkcji boolowskich.
+    \item \textbf{Tablica prawdy} - w tablicy zapisuje się wszystkie kombinacje zmiennych wejściowych oraz odpowiadające im wartości funkcji.
+    \item \textbf{Mapa Karnougha} - jest to przekształcona tablica prawdy, przedstawiana w postaci prostokątnej tablicy, gdzie indeksy dwójkowe zostały pogrupowane tak, by spełniały właśności kodu Graya.
+\end{itemize}
+
+\textbf{Tablice Karnougha} wykorzystywane są do minimalizacji funkcji boolowskich. Na ogół znalezienie formuły minimalnej dla zadanej funkcji boolowskiej jest bardzo skomplikowanym problemem. Jednak jeśli funkcja ma małą liczbę zmiennych i zostanie zapisana w tablicy Karnougha, wówczas znalezienie minimalnej formuły odbywa się na drodze intuicyjnej. W przypadku większej liczby zmiennych logicznych wykorzystywana jest natomiast metoda Quinea-McCluskeya.
 
 \end{document}

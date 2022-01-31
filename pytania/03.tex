@@ -1,0 +1,20 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Programowanie strukturalne - zasady. Przegląd instrukcji strukturalnych.}
+
+\textbf{Programowanie strukturalne} to paradygmat programowania polegający na dzieleniu programu komputerowego na procedury oraz hierarchicznie ułożone bloki z wykorzystaniem strktur kontrolnych w postaci instrukcji warunkowych oraz pętli. Rozwijał się on w opozycji do programowania wykorzystującego proste instrukcje warunkowe oraz skoki (czyli takie jak asemblery). Programowanie strukturalne zwiększe zrozumienie oraz przejrzystość kodu źródłowego programu, a także w większości eliminuje korzystanie z instrkcji GOTO. Jednym z najpopularniejszych języków umożliwiających programowanie strukturalne jest język C.
+
+Podstawowe strktury kontrole wykorzystywane w paradygmacie strukturalnym:
+\begin{itemize}
+    \item \textbf{Sekwencja} - wykonanie ciągu kolejnych instrukcji, w języku C jest to reprezentowane znakiem ";".
+    \item \textbf{Wybór} - w zależności od wartości predykatu wykonywana jest odpowiednia instrukcja. W językach programowania zazwyczaj jest to reprezentowane przez słowa kluczowe "if", "then", "else".
+    \item \textbf{Iteracja} - wykonywanie instrukcji póki spełniony jest jakiś warunek. Reprezentowane zazwyczaj przez słowa kluczowe "while", "repeat", "for" lub "do .. until", "do .. while".
+\end{itemize}
+
+\textbf{Podprogramy} pozwalają na wydzielenie pewnej grupy instrukcji i traktowanie ich jak pojedynczej instrukcji, co wprowadza dodatkową warstwę abstrakcji. W języku C jest to reprezentowane przez funkcje, które można wywoływać z poziomu innych funkcji.
+
+\textbf{Bloki} odpowiadają sekwencjom instrukcji, umożliwiając budowanie programu przez komponowanie struktur kontrolnych. W miejscu w którym umieściliśmy blok jest on traktowany jako pojedyncza instrukcja.
+
+Popularnymi odstępstwami od zasad programowania strukturalnego są instrukcje pozwalające na wcześniejsze opuszczenie pętli, np. korzystając z instrukcji "break" lub "continue".
+
+\end{document}
