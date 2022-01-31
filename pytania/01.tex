@@ -1,0 +1,28 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Podstawowe układy cyfrowe: bramki logiczne, przełączniki, układy sekwencyjne.}
+
+Układy cyfrowe to układy elektroniczne operujące na dyskretnych stanach logicznych obwodów. Wyróżnić można dwa podstawowe stany które wykorzystywane są do działania obwodów cyfrowych: stan niski (L lub 0) oraz stan wysoki (H lub 1). Stan wysoki najczęściej reprezentowany jest napięciem około 5V, 3.3V lub 1.8V w zależności od danego układu, podczas gdy stan niski 0V. Do budowy układów cyfrowych wykorzystywane są bramki logiczne realizujące podstawowe funkcjie logiczne zgodnie z algebrą Boole'a.
+
+Bramki logiczne wykorzystywane w układach cyfrowych:
+
+\begin{itemize}
+    \item AND (wszystkie wejścia 1 $\rightarrow$ 1)
+    \item OR (co najmniej jedno wejście 1 $\rightarrow$ 1)
+    \item NAND (zanegowane AND)
+    \item NOR (zanegowane OR)
+    \item XOR (wykluczające albo, tylko jedno wejście 1 $\rightarrow$ 1)
+    \item NOT (negacja)
+\end{itemize}
+
+Każdą funkcję logiczną realizowaną przez układ cyfrowy można stworzyć korzystając z aletrnatywy, koniunkcji oraz negacji.
+Wyróżnić można dwa typy układów cyfrowych:
+\begin{itemize}
+    \item \textbf{układy kombinatoryczne} - stan wyjść danego układu zależy tylko i wyłącznie od stanów wejść układu w danym momencie czasu, czyli układ ten realizuje pewną funkcję logiczną.
+    \item \textbf{układy sekwencyjne} - stan wyjść jest jednoznacznie zdefiniowany dla określonych stanów wejściowych układu wraz z uwzględnieniem stanu wewnętrznego danego układu.
+\end{itemize}
+\textbf{Przełącznik} (inaczej \textbf{przerzutnik}) jest przykładem układu sekwencyjnego, w którym wpływ na stan wyjściowy układu ma nie tylko stan wejść, ale też poprzedni stan wewnętrzny układu. Przerzutniki najczęściej wykorzystuje się do przechowywania małych ilości informacji do których musi być zapewniony stały dostęp, implementacji liczników oraz rejestrów. Najprostrzym przykładem przerzutnika jest przerzutnik RS, posiadający wejścia $R$ (reset), $S$ (set) oraz $Q$ i $\overline{Q}$.
+
+Dla układów sekwencyjnych wyróżnić można ponadto układy \textbf{asynchroniczne} oraz \textbf{synchroniczne}, przy czym układy synchroniczne posiadają dodatkowe wejście \textbf{CLK} sygnału zegara, które reguluje to kiedy wyjścia układu powinny zmienić swoje stany. Układy synchroniczne są powszechnie wykorzystywane we współczesnej elektronice, ponieważ pozwalają wyeliminować dużą liczbę problemów związanych ze zjawiskiem hazardu.
+
+\end{document}
